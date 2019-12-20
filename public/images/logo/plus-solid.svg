@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="448" height="448" viewBox="0 0 448 448">
+  <defs>
+    <clipPath id="clip-Plan_de_travail_1">
+      <rect width="448" height="448"/>
+    </clipPath>
+  </defs>
+  <g id="Plan_de_travail_1" data-name="Plan de travail – 1" clip-path="url(#clip-Plan_de_travail_1)">
+    <path id="plus-solid" d="M416,208H272V64a32,32,0,0,0-32-32H208a32,32,0,0,0-32,32V208H32A32,32,0,0,0,0,240v32a32,32,0,0,0,32,32H176V448a32,32,0,0,0,32,32h32a32,32,0,0,0,32-32V304H416a32,32,0,0,0,32-32V240A32,32,0,0,0,416,208Z" transform="translate(0 -32)" fill="#fff"/>
+  </g>
+</svg>
