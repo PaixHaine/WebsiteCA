@@ -225,7 +225,7 @@ html, body {
 .flex_description_up{
     opacity: 0;
     -webkit-animation-name: opacity;  /* Safari 4.0 - 8.0 */
-    -webkit-animation-delay: 2.5s;
+    -webkit-animation-delay: 2s;
     -webkit-animation-duration: 1s;  /* Safari 4.0 - 8.0 */
     -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
     animation-name: opacity;
@@ -265,13 +265,12 @@ html, body {
     background-color: rgba(255, 255, 255, 1);
     /*border: solid #fff;*/
     border-radius: 50px;
-    -moz-box-shadow:    0 0 3px 3px #000;
-    -webkit-box-shadow: 0 0 3px 3px #000;
-    box-shadow:         0 3px 3px 3px #000;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
     transition: 0.25s;
-    cursor: pointer;
     -webkit-animation-name: opacity;  /* Safari 4.0 - 8.0 */
-    -webkit-animation-delay: 2.5s;
+    -webkit-animation-delay: 2s;
     -webkit-animation-duration: 1s;  /* Safari 4.0 - 8.0 */
     -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
     animation-name: opacity;
@@ -280,9 +279,7 @@ html, body {
     animation-fill-mode: forwards;
 }
 
-.point:hover{
-    transform: scale(1.2);
-}
+
 
 .point img{
     width: 1vh;
@@ -313,21 +310,54 @@ html, body {
 
 }
 
-.grid-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    background-color: #2196F3;
-}
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 0;
-    font-size: 30px;
-    text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.grid-item img{
-    width: 20vh;
+.gallery_container{
+    margin-top: 5vh ;
+    margin-left: 20%;
+    width: 60%;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
 @-webkit-keyframes opacity {
