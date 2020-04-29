@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#home-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/background/joel-jasmin-forestbird-znoL1m6MD_k-unsplash.jpg");
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    flex-flow: column nowrap;
+    color: #fff;
+    font-family: Poppins;
+    text-transform: uppercase;
+
+}
+
+#home-logo img{
+    margin-top: 30px;
+    height: 50px;
+    color: #00A676;
+}
+
+.content-title {
+    font-size: 12vh;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 100px;
+}
+
+#home-container ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%
+}
+#home-container li{
+    list-style: none;
+}
+
+#google-play{
+    height: 50px;
+    margin-right: 30px;
+}
+
+#ios-store{
+    height: 50px;
+    margin-left: 30px;
+}
+
+.scroll-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 1.2em;
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+    color: rgba(255, 255, 255, .5);
+    border-radius: 2em;
+    border: solid 2px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.scroll-icon:hover {
+    background-color: rgba(255, 255, 255, .5);
+    color: #fff;
+}
+
+.scroll-icon::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+@keyframes scroll-icon {
+    0% { transform: translateY(-12px); opacity: 0; }
+    30%, 70% { opacity: 1; }
+    100% { transform: translateY(12px); opacity: 0; }
+}
