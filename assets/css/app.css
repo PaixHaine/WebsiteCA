@@ -164,10 +164,11 @@
     }
 
     #how-its-work-container h1{
+        text-align: right;
         padding-top: 10vh;
         font-weight: 400;
         font-size: 45pt;
-        margin-left: 45%;
+        margin-right: 20%;
         color: #fff;
     }
     #how-its-work-container span{
@@ -199,4 +200,96 @@
         margin-right: 10px;
         height: 14px;
     }
+
+/*  design-container  */
+
+    #design-container{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #design-title-container{
+        text-align: left;
+        width: 32%;
+        padding-top: 10vh;
+        margin-left: 20%;
+        color: #000;
+    }
+
+    #design-title-container h1{
+        font-size: 45pt;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    #design-content-container{
+        display: flex;
+        width: 50%;
+        height: 70vh;
+        margin-left: 25%;
+    }
+
+    #design-mobile-container{
+        /*width: 50%;*/
+        height: 100%;
+    }
+
+    #design-content{
+        width: 30%;
+    }
+    #design-conten hr{
+        display: none;
+    }
+    .design-app{
+        width: 50%;
+        margin-left: 50%;
+        display: flex;
+    }
+    .design-app p{
+        margin: 0;
+        align-self: flex-end;
+    }
+    #design-app-explore{
+        height: 6.1vh;
+    }
+    #design-app-search{
+        height: 18.1vh;
+    }
+    #design-app-flux{
+        height: 23.1vh;
+    }
+    #design-app-nav{
+        height: 13.1vh;
+    }
+
+    #design-line-container{
+        width: 40%;
+    }
+    .design-line{
+        width: 95%;
+        height: 0.1vh;
+        background-color: #00A676;
+    }
+    .design-line-one{
+        margin-top: 6vh;
+    }
+    .design-line-two{
+        margin-top: 18vh;
+    }
+    .design-line-three{
+        margin-top: 23vh;
+    }
+    .design-line-four{
+        margin-top: 13vh;
+    }
+
+    #design-content-container img{
+        width: auto;
+        height: 90%;
+        -webkit-box-shadow: 0px 4px 25px 10px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 4px 25px 10px rgba(0,0,0,0.2);
+        box-shadow: 0px 4px 25px 10px rgba(0,0,0,0.2);
+    }
+
+
 }
