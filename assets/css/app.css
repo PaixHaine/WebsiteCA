@@ -1,3 +1,11 @@
+/*
+##00A676
+#1A3640
+
+*/
+
+
+
 @media screen and (min-width: 1101px) {
 
     html, body {
@@ -108,7 +116,8 @@
         /*margin-right: 23%;*/
     }
 
-    .quality-container{display: flex; /* contexte sur le parent */
+    .quality-container{
+        display: flex; /* contexte sur le parent */
         flex-direction: column; /* direction d'affichage verticale */
         justify-content: center; /* alignement vertical */
         height: 100%;
@@ -316,4 +325,116 @@
         margin: 0;
     }
 
+/*  footer-container  */
+
+    footer{
+        margin: 0;
+        height: 28vh;
+        width: 100%;
+        padding-top: 6vh;
+        padding-bottom: 6vh;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 4px 25px 10px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 4px 25px 10px rgba(0,0,0,0.2);
+        box-shadow: 0px 4px 25px 10px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    footer h3{
+        font-weight: 300;
+        font-size: 10pt;
+    }
+
+    footer h2{
+        font-weight: 300;
+    }
+
+    footer p{
+        color: #444444;
+    }
+
+    #footer-flex-container{
+        display: flex;
+        width: 80%;
+        height: 90%;
+        margin-left: 10%;
+        /*background-color: black;*/
+    }
+
+    .footer-sep-container{
+        width: 2%;
+        height: 100%;
+    }
+    .footer-sep{
+        width: 2px;
+        height: 100%;
+        border-radius: 5px;
+        background-color: #00A676;
+        margin: auto;
+    }
+
+    #footer-logo{
+        display: flex; /* contexte sur le parent */
+        flex-direction: column; /* direction d'affichage verticale */
+        justify-content: center; /* alignement vertical */
+        width: 32%;
+        height: 100%;
+    }
+    #logo-cci-txt-black{
+        height: 140px;
+    }
+    #footer-about{
+        width: 28%;
+        margin: 0 2%;
+        height: 100%;
+        text-align: center;
+    }
+    #footer-join{
+        width: 32%;
+        height: 100%;
+        text-align: center;
+    }
+    #footer-download-app{
+        padding-top: 5%;
+    }
+    #footer-download-app ul{
+        margin: 0;
+        padding: 0;
+    }
+    #footer-download-app li{
+        display: inline;
+        list-style-type: none;
+    }
+    #footer-download-app a{
+        text-decoration: none;
+    }
+    #footer-google-play{
+        height: 40px;
+        margin-right: 2%;
+    }
+    #footer-ios-store{
+        height: 40px;
+        margin-left: 2%;
+    }
+    #footer-social-media{
+        width: 100%;
+        margin-top: 10%;
+        text-align: center;
+    }
+    #footer-social-media ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    #footer-social-media li{
+        display: inline;
+        margin: 0 5%;
+    }
+    #footer-social-media a{
+        margin: auto;
+        text-decoration: none;
+    }
+    #footer-social-media img{
+        height: 30px;
+    }
 }

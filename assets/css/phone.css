@@ -190,10 +190,6 @@
         /*padding-bottom: 31vh;*/
     }
 
-    #how-its-work-content ul{
-
-    }
-
     #how-its-work-content li{
         list-style: none;
         display: flex;
@@ -312,5 +308,150 @@
         font-size: 45pt;
         font-weight: 400;
         margin: 0;
+    }
+
+    /*  footer-container  */
+
+    footer{
+        width: 100%;
+        text-align: center;
+    }
+
+    footer h3{
+        width: 80%;
+        margin-left: 10%;
+        font-weight: 300;
+        font-size: 14pt;
+    }
+
+    #footer-flex-container{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .footer-sep-container{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .footer-sep{
+        width: 80%;
+        margin-left: 10%;
+        height: 2px;
+        border-radius: 5px;
+        background: #00A676;
+    }
+    #footer-logo{
+        -webkit-box-ordinal-group: 5;
+        -moz-box-ordinal-group: 5;
+        -ms-flex-order: 5;
+        -webkit-order: 5;
+        order: 5;
+        display: flex;
+        flex-direction: column; /* direction d'affichage verticale */
+        justify-content: center; /* alignement vertical */
+        width: 80%;
+        height: 100%;
+        margin-left: 10%;
+        padding: 5% 0;
+    }
+    #logo-cci-txt-black{
+        height: 300px;
+        margin: auto;
+    }
+    #footer-sep-one{
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+    #footer-about{
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 50px;
+    }
+    #footer-sep-two{
+        -webkit-box-ordinal-group: 4;
+        -moz-box-ordinal-group: 4;
+        -ms-flex-order: 4;
+        -webkit-order: 4;
+        order: 4;
+    }
+    #footer-about h2{
+        font-size: 30pt;
+        font-weight: 300;
+    }
+    #footer-about p{
+        font-size: 18pt;
+    }
+
+    #footer-join{
+        -webkit-box-ordinal-group: 3;
+        -moz-box-ordinal-group: 3;
+        -ms-flex-order: 3;
+        -webkit-order: 3;
+        order: 3;
+        text-align: center;
+    }
+    #footer-join h2{
+        font-size: 30pt;
+        font-weight: 300;
+    }
+
+    #footer-download-app{
+        /*display: flex;*/
+        /*width: 100%;*/
+        padding-top: 5%;
+        /*text-align: center;*/
+    }
+    #footer-download-app ul{
+        margin: 0;
+        padding: 0;
+    }
+    #footer-download-app li{
+        list-style-type: none;
+    }
+    #footer-download-app a{
+        text-decoration: none;
+    }
+    #footer-google-play{
+        height: 140px;
+    }
+    #footer-ios-store{
+        margin-top: 5%;
+        height: 140px;
+    }
+    #footer-social-media{
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    #footer-social-media ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    #footer-social-media li{
+        display: inline;
+        margin: 0 6%;
+    }
+    #footer-social-media a{
+        text-decoration: none;
+    }
+    #footer-social-media img{
+        height: 80px;
     }
 }
