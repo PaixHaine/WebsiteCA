@@ -324,6 +324,13 @@
         height: 75vw;
         border-radius: 5px;
     }
+
+    .swiper-pagination-bullet{
+        width: 20px !important;
+        height: 20px !important;
+        background-color: #00A676 !important;
+    }
+
     .swiper-slide {
 
         text-align: center;

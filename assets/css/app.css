@@ -214,7 +214,8 @@
 
     #design-container{
         width: 100%;
-        height: 100vh;
+        /*height: 100vh;*/
+        height: 1100px;
     }
 
     #design-title-container{
@@ -234,6 +235,7 @@
     #design-content-container{
         display: flex;
         width: 50%;
+        margin-top: 60px;
         height: 70vh;
         margin-left: 25%;
     }
