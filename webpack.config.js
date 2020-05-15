@@ -11,7 +11,7 @@ Encore
     .setOutputPath('public/build/')
 
     .copyFiles({
-        from: './assets/images',
+        from: './assets/images/build',
 
         // optional target path, relative to the output dir
         to: 'images/[path][name].[ext]',
@@ -39,6 +39,7 @@ Encore
      */
     .addEntry('app', './assets/js/app.js')
     .addEntry('slider', './assets/js/slider.js')
+    .addEntry('mobileSlider', './assets/js/mobile-slider.js')
     //.addEntry('page2', './assets/js/page2.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.

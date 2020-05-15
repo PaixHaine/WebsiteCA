@@ -130,88 +130,30 @@
         <div id="community-title-container">
             <h1>REJOIGNEZ UNE COMMUNAUTÉ DE PASSIONNÉS</h1>
         </div>
-        <div id="home-galery-container">
+        <div id="home-galery-container-computer">
             <div id="home-slide-button-container-left" class="home-slide-button-container">
                 <div id="home-slide-button-left" class="home-slide-button">
                     <img src="{{ asset('build/images/icons/angle-left-solid-color.svg') }}" alt="angle left">
                 </div>
             </div>
             <div id="home-galery-slide">
-                <div id="home-slide-one" class="home-slide-box">
-                    <img class="home-slide-box-img" src="{{ asset('build/images/galery/antonio-molinari-xD1c4FUHIJY-unsplash.jpg') }}" alt="antonio molinari unsplash">
-                    <div class="home-galery-profil">
-                        <div class="home-galery-profil-img">
-                            <img src="{{ asset('build/images/users/fezbot2000-pqYPRPHNE_8-unsplash.jpg') }}" alt="">
+                {% for key, post in posts %}
+                    <div id="{{homeSlides[key]}}" class="home-slide-box">
+                        <img class="home-slide-box-img" src="{{ asset( post.postImage ) }}" alt="antonio molinari unsplash">
+                        <div class="home-galery-profil">
+                            <div class="home-galery-profil-img">
+                                <img src="{{ asset( post.user.userImage ) }}" alt="">
+                            </div>
+                            <p>Michelle</p>
                         </div>
-                        <p>Michelle</p>
-                    </div>
-                    <div class="home-galery-locating">
-                        <div class="home-galery-locating-icon">
-                            <img src="{{ asset('build/images/icons/map-marker-alt-solid-white.svg') }}" alt="">
+                        <div class="home-galery-locating">
+                            <div class="home-galery-locating-icon">
+                                <img src="{{ asset('build/images/icons/map-marker-alt-solid-white.svg') }}" alt="">
+                            </div>
+                            <p>locating picture</p>
                         </div>
-                        <p>locating picture</p>
                     </div>
-                </div>
-                <div id="home-slide-two" class="home-slide-box">
-                    <img class="home-slide-box-img" src="{{ asset('build/images/galery/clay-banks-OOS6bEK6QrU-unsplash.jpg') }}" alt="antonio molinari unsplash">
-                    <div class="home-galery-profil">
-                        <div class="home-galery-profil-img">
-                            <img src="{{ asset('build/images/users/anthony-delanoix-OZDsM60eeec-unsplash.jpg') }}" alt="">
-                        </div>
-                        <p>Michel</p>
-                    </div>
-                    <div class="home-galery-locating">
-                        <div class="home-galery-locating-icon">
-                            <img src="{{ asset('build/images/icons/map-marker-alt-solid-white.svg') }}" alt="">
-                        </div>
-                        <p>locating picture</p>
-                    </div>
-                </div>
-                <div id="home-slide-three" class="home-slide-box">
-                    <img class="home-slide-box-img" src="{{ asset('build/images/galery/jon-tyson-g2QOdjF0h9c-unsplash.jpg') }}" alt="antonio molinari unsplash">
-                    <div class="home-galery-profil">
-                        <div class="home-galery-profil-img">
-                            <img src="{{ asset('build/images/users/ivana-cajina-dnL6ZIpht2s-unsplash.jpg') }}" alt="">
-                        </div>
-                        <p>Michelle</p>
-                    </div>
-                    <div class="home-galery-locating">
-                        <div class="home-galery-locating-icon">
-                            <img src="{{ asset('build/images/icons/map-marker-alt-solid-white.svg') }}" alt="">
-                        </div>
-                        <p>locating picture</p>
-                    </div>
-                </div>
-                <div id="home-slide-four" class="home-slide-box">
-                    <img class="home-slide-box-img" src="{{ asset('build/images/galery/jonathan-knepper-FDCr4frb7Vg-unsplash.jpg') }}" alt="antonio molinari unsplash">
-                    <div class="home-galery-profil">
-                        <div class="home-galery-profil-img">
-                            <img src="{{ asset('build/images/users/fezbot2000-pqYPRPHNE_8-unsplash.jpg') }}" alt="">
-                        </div>
-                        <p>Michelle</p>
-                    </div>
-                    <div class="home-galery-locating">
-                        <div class="home-galery-locating-icon">
-                            <img src="{{ asset('build/images/icons/map-marker-alt-solid-white.svg') }}" alt="">
-                        </div>
-                        <p>locating picture</p>
-                    </div>
-                </div>
-                <div id="home-slide-five" class="home-slide-box">
-                    <img class="home-slide-box-img" src="{{ asset('build/images/galery/joseph-barrientos-UbWhP0J8dsw-unsplash.jpg') }}" alt="antonio molinari unsplash">
-                    <div class="home-galery-profil">
-                        <div class="home-galery-profil-img">
-                            <img src="{{ asset('build/images/users/fezbot2000-pqYPRPHNE_8-unsplash.jpg') }}" alt="">
-                        </div>
-                        <p>Michelle</p>
-                    </div>
-                    <div class="home-galery-locating">
-                        <div class="home-galery-locating-icon">
-                            <img src="{{ asset('build/images/icons/map-marker-alt-solid-white.svg') }}" alt="">
-                        </div>
-                        <p>locating picture</p>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
             <div id="home-slide-button-container-right" class="home-slide-button-container">
                 <div id="home-slide-button-right" class="home-slide-button">
@@ -220,9 +162,56 @@
                 </div>
             </div>
         </div>
+
+        <div id="home-galery-container-mobile">
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    {% for key, post in posts %}
+                        <div class="swiper-slide">
+                            <div id="{{homeSlides[key]}}" class="home-slide-box">
+                                <img class="home-slide-box-img" src="{{ asset( post.postImage ) }}" alt="antonio molinari unsplash">
+                                <div class="home-galery-profil">
+                                    <div class="home-galery-profil-img">
+                                        <img src="{{ asset( post.user.userImage ) }}" alt="">
+                                    </div>
+                                    <p>Michelle</p>
+                                </div>
+                                <div class="home-galery-locating">
+                                    <div class="home-galery-locating-icon">
+                                        <img src="{{ asset('build/images/icons/map-marker-alt-solid-white.svg') }}" alt="">
+                                    </div>
+                                    <p>locating picture</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+{#                    <div class="swiper-slide">#}
+{#                        <img class="home-slide-box-img" src="{{ asset('build/images/galery/antonio-molinari-xD1c4FUHIJY-unsplash.jpg') }}" alt="antonio molinari unsplash">#}
+{#                        <div class="home-galery-profil">#}
+{#                            <div class="home-galery-profil-img">#}
+{#                                <img src="{{ asset('build/images/users/fezbot2000-pqYPRPHNE_8-unsplash.jpg') }}" alt="">#}
+{#                            </div>#}
+{#                            <p>Michelle</p>#}
+{#                        </div>#}
+{#                        <div class="home-galery-locating">#}
+{#                            <div class="home-galery-locating-icon">#}
+{#                                <img src="{{ asset('build/images/icons/map-marker-alt-solid-white.svg') }}" alt="">#}
+{#                            </div>#}
+{#                            <p>locating picture</p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="swiper-slide">Slide 2</div>#}
+{#                    <div class="swiper-slide">Slide 3</div>#}
+{#                    <div class="swiper-slide">Slide 4</div>#}
+                </div>
+            </div>
+
+        </div>
     </div>
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
     {{ encore_entry_script_tags('slider') }}
+    {{ encore_entry_script_tags('mobileSlider') }}
 {% endblock %}

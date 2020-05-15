@@ -19,7 +19,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        background-image: url("../images/background/joel-jasmin-forestbird-znoL1m6MD_k-unsplash.jpg");
+        background-image: url("../images/build/background/joel-jasmin-forestbird-znoL1m6MD_k-unsplash.jpg");
         width: 100%;
         height: 100vh;
         text-align: center;
@@ -164,7 +164,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        background-image: url("../images/background/adrian-TtIs6E8JcHA-unsplash.jpg");
+        background-image: url("../images/build/background/adrian-TtIs6E8JcHA-unsplash.jpg");
     }
 
     .black-filter-03{
@@ -308,7 +308,7 @@
         background-size: 140%;
         background-repeat: no-repeat;
         background-position: bottom left;
-        background-image: url("../images/background/kristjan-kotar--h15p84GY5k-unsplash.jpg");
+        background-image: url("../images/build/background/kristjan-kotar--h15p84GY5k-unsplash.jpg");
     }
 
     #community-title-container{
@@ -325,7 +325,11 @@
         margin: 0;
     }
 
-    #home-galery-container{
+    #home-galery-container-mobile{
+        display: none;
+    }
+
+    #home-galery-container-computer{
         -webkit-box-ordinal-group: 5;
         -moz-box-ordinal-group: 5;
         -ms-flex-order: 5;

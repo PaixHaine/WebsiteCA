@@ -11,7 +11,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        background-image: url("../images/background/joel-jasmin-forestbird-znoL1m6MD_k-unsplash.jpg");
+        background-image: url("../images/build/background/joel-jasmin-forestbird-znoL1m6MD_k-unsplash.jpg");
         width: 100%;
         height: 100vh;
         text-align: center;
@@ -163,7 +163,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        background-image: url("../images/background/adrian-TtIs6E8JcHA-unsplash.jpg");
+        background-image: url("../images/build/background/adrian-TtIs6E8JcHA-unsplash.jpg");
     }
 
     .black-filter-03{
@@ -289,15 +289,16 @@
 
     #community-container{
         width: 100%;
-        height: 100vh;
+        /*height: 100vh;*/
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom left;
-        background-image: url("../images/background/kristjan-kotar--h15p84GY5k-unsplash.jpg");
+        background-image: url("../images/build/background/kristjan-kotar--h15p84GY5k-unsplash.jpg");
     }
 
     #community-title-container{
         padding-top: 10vh;
+        padding-bottom: 10vh;
         width: 80%;
         margin-left: 10%;
         text-align: center;
@@ -308,6 +309,103 @@
         font-size: 45pt;
         font-weight: 400;
         margin: 0;
+    }
+
+    #home-galery-container-computer{
+        display: none;
+    }
+    #home-galery-container-mobile{
+        width: 100%;
+        height: 1500px;
+    }
+
+    .swiper-container {
+        width: 75vw;
+        height: 75vw;
+        border-radius: 5px;
+    }
+    .swiper-slide {
+
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .home-slide-box-img{
+        flex-shrink: 0;
+        max-width: 150%;
+        transition: 0.2s;
+        /*min-height: 100%;*/
+        /*width: 100%;*/
+        /*max-width: 110%;*/
+        /*max-height: 110%;*/
+    }
+    .home-slide-box-img:hover{
+        max-width: 100%;
+    }
+
+    .home-galery-profil{
+        display: flex;
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    .home-galery-profil-img{
+        width: 55px;
+        height: 55px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .home-galery-profil-img img{
+        max-height: 400%;
+    }
+    .home-galery-profil p{
+        margin: auto 10px;
+        font-size: 20pt;
+        padding: 0;
+        color: #000;
+    }
+
+    .home-galery-locating{
+        display: flex;
+        position: absolute;
+        top: 68px;
+        left: 16px;
+    }
+    .home-galery-locating-icon{
+        width: 20px;
+        /*height: 15px;*/
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .home-galery-locating-icon img{
+        max-width: 100%;
+    }
+    .home-galery-locating p{
+        margin: 0 10px;
+        padding: 0;
+        font-size: 20pt;
+        color: #fff;
     }
 
     /*  footer-container  */
